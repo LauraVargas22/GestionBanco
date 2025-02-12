@@ -8,71 +8,71 @@ export class usersAccess extends HTMLElement {
     render() {
         this.innerHTML = `
         <style>
-            body {
-                background-color: #111111;
-                margin: 0;
-                font-family: 'Arial', sans-serif;
-            }
-            
-            .navbar {
-                background-color: #1c1c1c;
-                padding: 15px 0;
-                box-shadow: 0 2px 15px rgba(255, 0, 0, 0.2);
-                border-bottom: 3px solidrgb(95, 5, 5);
-            }
-
-            .container-fluid {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-            }
-
-            .navbar-nav {
-                display: flex;
-                justify-content: center;
-                gap: 20px;
-                list-style: none;
-                margin: 0;
-                padding: 0;
-            }
-
-            .nav-link {
-                color: #ffffff;
-                text-decoration: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                transition: all 0.3s ease;
-                text-transform: uppercase;
-                font-weight: bold;
-                position: relative;
-                overflow: hidden;
-            }
-
-            .nav-link:before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: -100%;
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(90deg, transparent, rgba(180, 29, 29, 0.2), transparent);
-                transition: 0.5s;
-            }
-
-            .nav-link:hover:before {
-                left: 100%;
-            }
-
-            .nav-link.active {
-                background-color:rgb(100, 22, 22);
-                box-shadow: 0 0 20px rgba(156, 9, 9, 0.5);
-            }
-
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 20px;
-            }
+        body {
+            background-color: #111111;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+          }
+          
+          .navbar {
+            background-color: #1c1c1c;
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 26, 255, 0.2);
+            border-bottom: 3px solidrgb(95, 5, 5);
+          }
+          
+          .container-fluid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+          }
+          
+          .navbar-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .nav-link:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(29, 39, 180, 0.2), transparent);
+            transition: 0.5s;
+          }
+          
+          .nav-link:hover:before {
+            left: 100%;
+          }
+          
+          .nav-link.active {
+            background-color:rgb(22, 27, 100);
+            box-shadow: 0 0 20px rgba(29, 39, 180, 0.2);
+          }
+          
+          .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+          }
         </style>
         <nav class="navbar">
             <div class="container-fluid">

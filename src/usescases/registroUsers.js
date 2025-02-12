@@ -8,7 +8,7 @@ export class registroUser extends HTMLElement {
     }
 
     render() {
-        this.innerHTML = `
+        this.innerHTML = /*html*/`
         <style>
             .registro-container {
                 background-color: #1c1c1c;
@@ -16,8 +16,8 @@ export class registroUser extends HTMLElement {
                 padding: 30px;
                 max-width: 400px;
                 margin: 100px auto;
-                box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
-                border: 1px solid #333;
+                box-shadow: 0 0 30px rgba(0, 47, 255, 0.1);
+                border: 1px solid #333333;
             }
 
             h2 {
@@ -27,7 +27,7 @@ export class registroUser extends HTMLElement {
                 margin-bottom: 30px;
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                text-shadow: 2px 2px 4px rgba(116, 4, 4, 0.89);
+                text-shadow: 2px 2px 4px rgba(0, 7, 75, 0.89);
             }
 
             form {
@@ -59,12 +59,12 @@ export class registroUser extends HTMLElement {
 
             input:focus {
                 outline: none;
-                border-color:rgb(114, 12, 12);
-                box-shadow: 0 0 10px rgba(138, 6, 6, 0.83);
+                border-color:rgba(0, 7, 75, 0.89);
+                box-shadow: 0 0 10px rgba(0, 47, 255, 0.1);
             }
 
             button {
-                background: linear-gradient(45deg,rgb(146, 8, 8),rgb(113, 7, 7));
+                background: linear-gradient(45deg,rgba(0, 7, 75, 0.89),rgba(0, 47, 255, 0.1));
                 color: white;
                 padding: 15px;
                 border: none;
@@ -96,7 +96,7 @@ export class registroUser extends HTMLElement {
 
             button:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 7px 20px rgba(255, 0, 0, 0.3);
+                box-shadow: 0 7px 20px rgba(0, 47, 255, 0.1);
             }
 
             button:active {
