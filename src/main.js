@@ -1,1 +1,1 @@
-
+import "./usescases/userIndex.js";
