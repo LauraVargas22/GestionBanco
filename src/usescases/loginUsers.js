@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2';
 import { getUsuarios } from '../Apis/userApis.js';
+import './pageUsuario.js';
 
 export class loginUser extends HTMLElement {
     constructor() {
