@@ -167,11 +167,33 @@ export class simularPrestamo extends HTMLElement {
                         </select>
                     </div>
                 <!--Evento para calcular la tabla de amortización-->
-                <button id="btnRegistrar" type="submit" class="btn-submit">
+                <button id="btnCalcular" type="submit" class="btn-submit">
                    Calcular
                 </button>
             </form>
+            <div id="#tabla"></div>
         </div>
+        `;
+
+        this.addEventListener();
+    }
+
+    crearData(){
+        const formCrearData = this.shadowRoot.querySelector('#formSimularPrestamo')
+    }
+
+    addEventListener(){
+        this.shadowRoot.querySelector('#btnCalcular').addEventListener("click", () => {
+            this.calcularAmortizacion();
+        })
+    }
+
+    calcularAmortizacion(){
+        const tabla = this.shadowRoot.querySelector('#tabla');
+        tabla.innerHTML = `
+            <div class="card-header">
+                <h2>Tabla de Amortización</h2>
+            </div>
         `;
     }
 }
